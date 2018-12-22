@@ -1,1 +1,2 @@
-console.log('starting now');
+console.warn('starting now');
+console.log('second console');
