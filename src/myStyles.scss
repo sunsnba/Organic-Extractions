@@ -8,3 +8,9 @@ body {
     margin: 0 auto;
     padding-top: 50px;
   }
+
+  .app-header {
+    height: 250px;
+    width: inherit;
+    object-fit: cover;
+  }
