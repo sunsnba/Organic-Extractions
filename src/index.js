@@ -36,13 +36,13 @@ class App extends React.Component {
     const { CaptainKirkBio } = this.state;
     return (
       <div className="app">
-        <img alt="header" src="/dist/images/header.jpg" className="app-header" />
+        <img alt="header" src="/dist/images/logoHeader.png" className="app-header" />
         <p>
           We are a most promising species, Mr. Spock, as predators go. Did you know that? I
           frequently have my doubts. I dont. Not any more. And maybe in a thousand years or so, we
           will be able to prove it.
         </p>
-        <p>- Captain Kirk</p>
+        <p>- Captain Steve</p>
         <section>
           {Object.values(CaptainKirkBio).length === 0 ? (
             <p>Loading User Information</p>
