@@ -1,56 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import Error from './components/Error';
+import { Route, BrowserRouter, Switch } from "react-router-dom";
 
 import './myStyles.scss';
 
 class App extends React.Component {
-  state = {
-    CaptainKirkBio: {},
-  };
-
-  componentDidMount() {
-    this.onGetKirkBio();
-  }
-
-  onGetKirkBio = async () => {
-    try {
-      const result = await fetch('http://stapi.co/api/v1/rest/character/search', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: {
-          title: 'James T. Kirk',
-          name: 'James T. Kirk',
-        },
-      });
-      const resultJSON = await result.json();
-      const character = resultJSON.characters[0];
-      this.setState({ CaptainKirkBio: character });
-    } catch (error) {
-      console.log('error', error);
-    }
-  };
-
+  constructor(props) {
+    super(props)
+  
+}
   render() {
-    const { CaptainKirkBio } = this.state;
     return (
-      <div className="app">
-        <img alt="header" src="/dist/images/logoHeader.png" className="app-header" />
-        <p>
-          We are a most promising species, Mr. Spock, as predators go. Did you know that? I
-          frequently have my doubts. I dont. Not any more. And maybe in a thousand years or so, we
-          will be able to prove it.
-        </p>
-        <p>- Captain Steve</p>
-        <section>
-          {Object.values(CaptainKirkBio).length === 0 ? (
-            <p>Loading User Information</p>
-          ) : (
-            <p style={{ wordBreak: 'break-all' }}>{JSON.stringify(CaptainKirkBio)}</p>
-          )}
-        </section>
-      </div>
+          <BrowserRouter >
+          <Switch>
+            <Route path={"/"} component={Home} exact/>
+            <Route path={"/about"} component={About}/>
+            <Route path={"/contact"} component={Contact}/>
+            <Route component={Error}/>
+            </Switch>
+          </BrowserRouter>
     );
   }
 }
