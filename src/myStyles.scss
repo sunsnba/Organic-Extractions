@@ -15,3 +15,35 @@ body {
     object-fit: cover;
     font-family: "Pavanam";
   }
+
+
+.Home {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav {
+    border: 3px solid black;
+    background: black;
+    height: 30px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.navButton {
+  color: white;
+  text-decoration: none;
+  float: right;
+  padding-right: 10px;
+}
