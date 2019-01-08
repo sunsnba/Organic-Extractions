@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import News from './components/News';
+import Shop from './components/Shop';
 import Error from './components/Error';
 import Navigation from './components/Navigation';
 import { Route, BrowserRouter, Switch } from "react-router-dom";
@@ -23,6 +25,8 @@ class App extends React.Component {
             <Route path={"/"} component={Home} exact/>
             <Route path={"/about"} component={About}/>
             <Route path={"/contact"} component={Contact}/>
+            <Route path={"/news"} component={News}/>
+            <Route path={"/shop"} component={Shop}/>
             <Route component={Error}/>
             </Switch>
             </div>
