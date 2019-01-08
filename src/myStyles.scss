@@ -26,12 +26,11 @@ body {
 }
 
 .nav {
-    border: 3px solid black;
     background: black;
     height: 30px;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin-top: 80px;
 }
 
 .logo {
@@ -46,4 +45,12 @@ body {
   text-decoration: none;
   float: right;
   padding-right: 10px;
+}
+
+.phone {
+  margin-left: 72%;
+}
+
+.contact {
+  text-align: center;
 }
