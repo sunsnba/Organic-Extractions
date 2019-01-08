@@ -1,4 +1,5 @@
 import React from 'react'
+import Partners from './Partners';
 import '../myStyles.scss';
 
 class Home extends React.Component {
@@ -17,6 +18,7 @@ class Home extends React.Component {
              products are distributed to high-end retail locations throughout
              Southern California. 
                </p>
+               < Partners />
                </div>
         )
     }
