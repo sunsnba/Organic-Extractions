@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 class About extends React.Component {
     constructor(props) {
@@ -11,10 +10,10 @@ class About extends React.Component {
             <div>
               <img alt="header" src="../../dist/images/logoHeader.png" className="app-header" />
             <p>
-            Organic Extractions Enterprises was created to cultivate among the 
-            finest cannabis products for discerning consumers. Our 
-            products are distributed to high-end retail locations throughout
-            Southern California. 
+            Through long-lasting relationships with many of the top cultivators in California,
+            Organic Extractions has access to some of the highest quality flowers in the world.
+            Combining these excellent raw materials with years of expeirence, knowledge and a 
+            cutting edge extraction facility, we are able to create choice butters, oil and wax.
               </p>
               </div>
         )

@@ -3,13 +3,14 @@ import '../myStyles.scss';
 
 const Partners = () => {
     return (
-        <div >
-        <h3>
+        <div className="dp">
+        <h1>
             Distribution Partners
-        </h3>
+        </h1>
         <img className="distLogo" src='../../dist/images/medmen.png' />
         <img className="distLogo" src='../../dist/images/Asset-1.png' />
         <img className="distLogo" src='../../dist/images/jungle.png' />
+        <img className="distLogo" src="../../dist/images/eaze.jpg" />
         </div>
     );
 };
