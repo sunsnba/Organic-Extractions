@@ -1,5 +1,6 @@
 import React from 'react'
 import Partners from './Partners';
+import Modal from './Modal/Modal';
 import '../myStyles.scss';
 
 class Home extends React.Component {
@@ -12,6 +13,7 @@ class Home extends React.Component {
     render(props) {
         return (
             <div className="Home"  style={{backgroundImage: this.state.backgroundImage}}>
+                               <Modal></Modal>
               <img className="logo" alt="header" src='../../dist/images/logoHeader.png' />
                 <div className="goal">
                    <h1> MISSION</h1>

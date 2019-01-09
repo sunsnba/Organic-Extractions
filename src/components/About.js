@@ -30,8 +30,9 @@ class About extends React.Component {
             We are continually evaluating new partners, extraction methods and the latest technologies to ensure
             the highest quality products can meet our demand. While our Frogtown office do not have a retail location,
             you can find our products at one of the stores for our retail partners such as MedMen, MMD or Jungle Boys. 
-            It's also possible to order products online with delivery via Eaze. Please enjoy responsibly.       
+            It's also possible to order products online with delivery via Eaze delivery app. Please enjoy responsibly.       
                     </p>
+                    <img className="humboldt" src='../../dist/images/one-of-many-views-of.jpg' />
               </div>
         )
     }
