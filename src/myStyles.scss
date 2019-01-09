@@ -42,6 +42,7 @@ body {
 
 .phone {
   margin-left: 72%;
+  color: #383838;
 }
 
 .contact {
@@ -70,23 +71,34 @@ body {
 
 .mission {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: lightgray;
   font-size: 17px;
+}
+
+.about {
+  background: black;
+  height: 100%;
 }
 
 .aboutLogo {
   display: block;
   float: right;
-  width: 375px;
-  height: 375px;
+  width: 373px;
+  height: 373px;
 }
 
 
 .aboutHeader {
-  align: center;
+  padding-top: 15px;
+  text-align: center;
+  color: white;
 }
 
 .aboutInfo {
   text-align: left;
+  font-size: 17px;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: lightgray;
 }
