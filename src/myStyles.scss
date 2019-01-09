@@ -2,22 +2,25 @@ body {
     background-color: white;
     color: black;
     margin: 0;
-    padding: 0
+    padding: 0;
+    width: 100%;
+    height: 100%;
   }
 
 .Home {
   margin: 0;
   width: 100%;
-  padding: 10px;
   text-align: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .nav {
     background: black;
-    height: 40px;
+    height: 50px;
     width: 100%;
     padding: 0;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .logo {
@@ -25,14 +28,16 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  padding: 10px;
 }
 
 .navButton {
   color: white;
   text-decoration: none;
   float: right;
-  padding-right: 10px;
+  padding-right: 15px;
   font-size: 18px;
+  margin-top: 13px;
 }
 
 .phone {
@@ -68,4 +73,20 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: lightgray;
   font-size: 17px;
+}
+
+.aboutLogo {
+  display: block;
+  float: right;
+  width: 375px;
+  height: 375px;
+}
+
+
+.aboutHeader {
+  align: center;
+}
+
+.aboutInfo {
+  text-align: left;
 }

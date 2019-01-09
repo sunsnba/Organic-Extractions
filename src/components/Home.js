@@ -6,9 +6,8 @@ class Home extends React.Component {
   constructor(props) {
   super(props)
   this.state = {
-    backgroundImage:  "url('../../dist/images/wh2.png')",
+    backgroundImage:  "url('../../dist/images/warehouse-led-lighting.jpg')",
   }
-
 }
     render(props) {
         return (
