@@ -8,12 +8,25 @@ class Home extends React.Component {
   super(props)
   this.state = {
     backgroundImage:  "url('../../dist/images/warehouse-led-lighting.jpg')",
+    show: true,
   }
 }
+
+showModal = () => {
+  this.setState({
+    ...this.state,
+    show: !this.state.show
+  })
+}
+
+handleClick = () => {
+  window.location.assign('https://www.youtube.com/watch?v=fRh_vgS2dFE')
+}
+
     render(props) {
         return (
             <div className="Home"  style={{backgroundImage: this.state.backgroundImage}}>
-                               <Modal></Modal>
+                  <Modal show={this.state.show} showModal={this.showModal} handleClick={this.handleClick} />                 
               <img className="logo" alt="header" src='../../dist/images/logoHeader.png' />
                 <div className="goal">
                    <h1> MISSION</h1>
