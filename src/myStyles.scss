@@ -115,7 +115,27 @@ body {
 }
 
 
-.modal2 {
-  background: red;
-  height: 800px;
+.modal {
+  background: black;
+  color: white;
+  border-radius: 5px;
+  margin-left: 225px;
+  height: 600px;
+  width: 1000px;
+  padding: 40px;
+  position: fixed;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+
+.modalButton {
+  float: center;
+  height: 500px;
+}
+
+.modalLogo {
+  padding-left: 200px;
 }
