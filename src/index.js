@@ -9,6 +9,8 @@ import Cart from './components/Cart';
 import Error from './components/Error';
 import Navigation from './components/Navigation';
 import { Route, BrowserRouter, Switch } from "react-router-dom";
+import { Provider } from 'react-redux';
+import store from './config/store';
 
 import './myStyles.scss';
 
@@ -19,6 +21,7 @@ class App extends React.Component {
 }
   render() {
     return (
+          <Provider store={store}>
           <BrowserRouter >
           <div>
           <Navigation />
@@ -33,6 +36,7 @@ class App extends React.Component {
             </Switch>
             </div>
           </BrowserRouter>
+          </Provider>
     );
   }
 }
