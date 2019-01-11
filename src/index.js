@@ -5,6 +5,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import News from './components/News';
 import Shop from './components/Shop';
+import Cart from './components/Cart';
 import Error from './components/Error';
 import Navigation from './components/Navigation';
 import { Route, BrowserRouter, Switch } from "react-router-dom";
@@ -27,6 +28,7 @@ class App extends React.Component {
             <Route path={"/contact"} component={Contact}/>
             <Route path={"/news"} component={News}/>
             <Route path={"/shop"} component={Shop}/>
+            <Route path={"/cart"} component={Cart}/>
             <Route component={Error}/>
             </Switch>
             </div>
