@@ -5,12 +5,14 @@ class Modal extends React.Component {
 
         let modal1 = this.props.show ? (
             <div className="modal">
-             <img className="aboutLogo" src='../../../dist/images/logoHeader.png' />
+             <img className="modalLogo" src='../../../dist/images/logoHeader.png' />
+             <br></br>
             Are you 21 or older?
-                <input type="button"
+            <br></br>
+                <input type="button" className="modalButton"
                 onClick={this.props.showModal}
                 value="Yes" />
-                <input type="button"
+                <input type="button" className="modalButton"
                 onClick={this.props.handleClick}
                 value="No" />
             </div>
