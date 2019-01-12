@@ -1,12 +1,14 @@
 import React from 'react';
 
-const Shop = () => {
+import ProductListing from './ProductListing';
+import data from '../data/products.json';
+
+const Shop = (props) => {
     return (
-        <div >
-        <h3>
-           Shop
-        </h3>
-        </div>
+            <div>
+                <h2>Shop</h2>
+                <ProductListing products={data.products} />
+           </div>
     );
 };
 

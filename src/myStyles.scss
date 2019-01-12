@@ -118,10 +118,17 @@ body {
 .modal {
   background: black;
   color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-left: 280px;
   height: 600px;
   width: 900px;
-  font-size: 30px;
+  font-size: 40px;
   position: fixed;
+}
+
+.modalLogo {
+  height: 350px;
+  width: 350px;
+  margin: 35px;
+  padding-left: 2px;
 }
