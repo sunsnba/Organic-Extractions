@@ -132,3 +132,16 @@ body {
   margin: 35px;
   padding-left: 2px;
 }
+
+.product-listing {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.product-listing .product-listing-item {
+  justify-content: space-between;
+}
