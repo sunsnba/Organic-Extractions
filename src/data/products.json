@@ -4,67 +4,52 @@
       {
         "id": 1,
         "name": "Papaya 70-120u Hash Rosin",
-        "description": "Papaya 70-120u Hash Rosin. Winner of this year's Emerald Cup.",
+        "description": "Emerald Cup winner",
         "keywords": [
           "rosin", "dabs", "hash", "winner"
         ],
         "image": "../../dist/shopImages/papaya.jpeg",
-        "age": [
-          "21", "+"
-        ],
         "price": 59.99
       },
       {
         "id": 2,
-        "name": "CBD Oil",
-        "description": "Improve Me CBS Cannabis Oil 2000mg. Raw Food Supplement.",
+        "name": "Super Lemon Haze",
+        "description": "Super Lemon Haze shatter",
         "keywords": [
-          "CBD", "Oil", "drops"
+          "lemon", "super", "lemon haze", "shatter"
         ],
-        "image": "../../dist/shopImages/improve_me_cbd_2000mg.jpg",
-        "age": [
-          "3", "10"
-        ],
-        "price": 147.91
+        "image": "../../dist/shopImages/lemon.jpg",
+        "price": 71.99
       },
       {
         "id": 3,
-        "name": "Gelato #33 mimosa PNR rosin",
-        "description": "Gelato #33 mimosa PNR rosin.",
+        "name": "Gelato #33 mimosa PNR",
+        "description": "Gelato #33 mimosa PNR rosin",
         "keywords": [
           "rosin", "gelato", "PNR", "33"
         ],
         "image": "../../dist/shopImages/gelato.jpg",
-        "age": [
-          "0", "10"
-        ],
         "price": 75.99
       },
       {
         "id": 4,
         "name": "Orange Diesel V2",
-        "description": "Orange Diesel V2 shatter.",
+        "description": "Orange Diesel V2 shatter",
         "keywords": [
           "orange", "diesel", "v2", "shatter"
         ],
         "image": "../../dist/shopImages/orange shatter.png",
-        "age": [
-          "0", "10"
-        ],
         "price": 71.99
       },
       {
         "id": 5,
-        "name": "Super Lemon Haze",
-        "description": "Super Lemon Haze shatter.",
+        "name": "Improve Me CBS Cannabis Oil",
+        "description": " 2000mg",
         "keywords": [
-          "lemon", "super", "lemon haze", "shatter"
+          "CBD", "Oil", "drops"
         ],
-        "image": "../../dist/shopImages/lemon.jpg",
-        "age": [
-          "0", "10"
-        ],
-        "price": 71.99
+        "image": "../../dist/shopImages/cbd.jpg",
+        "price": 147.91
       }
     ]
   }
