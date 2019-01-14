@@ -8,6 +8,7 @@ class About extends React.Component {
     render(props) {
         return (
             <div className="about">
+            <br></br>
               <h3 className="aboutHeader">WELCOME</h3>
                 <h1 className="aboutHeader">About Us</h1>
                   <img className="aboutLogo" src='../../dist/images/logoHeader.png' />
