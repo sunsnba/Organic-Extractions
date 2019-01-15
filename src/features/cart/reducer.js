@@ -8,16 +8,20 @@ const addToCart = (cart, item) => {
     : [...cartWithoutItem(cart, item), {...cartItem, quantity: cartItem.quantity + 1}]
 }
 
+const removeFromCart = (cart, item) => {
+    return item.quantity === 1
+    ? [...cartWithoutItem(cart, item)]
+    : [...cartWithoutItem(cart, item), {...item, quantity: item.quantity - 1 } ]
+}
+
 const cartReducer = (state=[], action) => {
     switch(action.type) {
         case 'ADD': 
           return addToCart(state, action.payload)
           
         case 'REMOVE': 
-          const firstMatchIndex = state.indexOf(action.payload)
-           return state.filter((item, index) => index !== firstMatchIndex)
-        // finds the first item we're trying to remove return all items from state except the one
-        // that matches that first index
+          return removeFromCart(state, action.payload) 
+
         default:
            return state;
         }

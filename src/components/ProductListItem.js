@@ -1,4 +1,6 @@
 import React from 'react';
+import AddBtn from './add-btn';
+import RemoveBtn from './remove-btn';
 
 const ProductListItem = (props) => {
     
@@ -14,12 +16,22 @@ const ProductListItem = (props) => {
             <div>{ props.product.description }</div>
             <div>${ props.product.price }</div>
             <div>
-                <button
-                onClick={ () => props.addToCart(props.product)}
-                >Add to Cart({
-                    (props.cartItem && props.cartItem.quantity) || 0
-                    // if value is undefined or null we'll return 0 for the quantity.
-                })</button>
+                <AddBtn 
+                cartItem={props.cartItem} 
+                product={props.product} 
+                addToCart={props.addToCart}
+                />
+
+                {
+                    props.cartItem 
+                    ?  <RemoveBtn 
+                        cartItem={props.cartItem} 
+                        product={props.product} 
+                        removeFromCart={props.removeFromCart}
+                    />
+                    : null
+                }
+                
             </div>
         </div>
     )
