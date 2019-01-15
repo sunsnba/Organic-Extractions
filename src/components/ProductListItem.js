@@ -5,8 +5,8 @@ const ProductListItem = (props) => {
         <div className="product-list-item">
             <h3>{ props.product.name }</h3>
             <img 
-            height={100}
-            width={100}
+            height={150}
+            width={150}
             title= { props.product.name }
             src={`./Shop/${props.product.image}`}
             />
