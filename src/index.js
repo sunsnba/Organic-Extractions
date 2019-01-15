@@ -21,7 +21,7 @@ class App extends React.Component {
 }
   render() {
     return (
-          <Provider store={store}>
+          <Provider store={store}> 
           <BrowserRouter >
           <div>
           <Navigation />
