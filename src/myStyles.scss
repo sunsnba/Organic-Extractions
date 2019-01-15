@@ -133,15 +133,19 @@ body {
   padding-left: 2px;
 }
 
+
+.shopContainer {
+  width: 800px;
+  margin: 10px auto;
+  padding: 30px;
+}
+
 .product-listing {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.product-listing .product-listing-item {
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 30px 30px;
+  text-align: center;
 }

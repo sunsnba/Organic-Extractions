@@ -4,7 +4,7 @@
       {
         "id": 1,
         "name": "Papaya 70-120u Hash Rosin",
-        "description": "Emerald Cup winner",
+        "description": "Emerald Cup winning rosin",
         "keywords": [
           "rosin", "dabs", "hash", "winner"
         ],
@@ -43,13 +43,13 @@
       },
       {
         "id": 5,
-        "name": "Improve Me CBS Cannabis Oil",
-        "description": " 2000mg",
+        "name": "CBD Oil",
+        "description": "Improve Me CBD 2000 mg",
         "keywords": [
           "CBD", "Oil", "drops"
         ],
         "image": "../../dist/shopImages/cbd.jpg",
-        "price": 147.91
+        "price": 147.99
       }
     ]
   }
