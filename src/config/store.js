@@ -1,8 +1,11 @@
 import { createStore, combineReducers } from 'redux'
+
 import cartReducer from '../features/cart/reducer'
+import productsReducer from '../components/reducer'
 
 const rootReducer = combineReducers({
-    cart: cartReducer
+    cart: cartReducer,
+    products: productsReducer,
 })
 // cart key and cartReducer. Only have one reducer but combineReducers would allow for multiple into
 // our rootReducer
