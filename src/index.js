@@ -24,7 +24,7 @@ class App extends React.Component {
           <Provider store={store}> 
           <BrowserRouter >
           <div>
-          <Navigation />
+          <Navigation {...this.props }/>
           <Switch>
             <Route path={"/"} component={Home} exact/>
             <Route path={"/about"} component={About}/>
