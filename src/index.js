@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import News from './components/News';
 import Shop from './components/Shop';
 import CartPage from './components/CartPage';
+import CheckoutPage from './components/Pages/checkout';
 import Error from './components/Error';
 import Navigation from './components/Navigation';
 import { Route, BrowserRouter, Switch } from "react-router-dom";
@@ -32,6 +33,7 @@ class App extends React.Component {
             <Route path={"/news"} component={News}/>
             <Route path={"/shop"} component={Shop}/>
             <Route path={"/cart"} component={CartPage}/>
+            <Route path={'/checkout'} component={CheckoutPage}/>
             <Route component={Error}/>
             </Switch>
             </div>
