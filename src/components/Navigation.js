@@ -8,6 +8,7 @@ const Navigation = ({cart}) => {
         <div>
         <h3 className="phone"> 1-800-555-1234 | info@organicextractions.com </h3>
         <div className="nav">
+            <NavLink className="navButton" to="/checkout">CHECKOUT</NavLink>
             <NavLink className="navButton" to="/cart">CART ({cart.reduce((acc, item) => {
                 return acc + item.quantity
             }, 0)})</NavLink>
