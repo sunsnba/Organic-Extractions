@@ -7,12 +7,12 @@ function CheckoutForm (props) {
     return <div>
       <form onSubmit={handleSubmit} >
          <div>
-             <label htmlForm="order[name]">Your name: </label><br/>
+             <label htmlFor="order[name]">Your name: </label><br/>
              <Field name="order[name]" component="input" type="text" />
          </div>
 
          <div>
-             <label htmlForm="order[email]">Your email: </label><br/>
+             <label htmlFor="order[email]">Your email: </label><br/>
             <Field name="order[email]" component="input" type="email" />
          </div>
 
