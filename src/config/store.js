@@ -1,4 +1,5 @@
 import { createStore, combineReducers } from 'redux'
+import { reducer as formReducer } from 'redux-form'
 
 import cartReducer from '../features/cart/reducer'
 import productsReducer from '../components/reducer'
@@ -6,6 +7,7 @@ import productsReducer from '../components/reducer'
 const rootReducer = combineReducers({
     cart: cartReducer,
     products: productsReducer,
+    form: formReducer
 })
 // cart key and cartReducer. Only have one reducer but combineReducers would allow for multiple into
 // our rootReducer

@@ -3,6 +3,28 @@ import { connect } from 'react-redux'
 
 import Cart from '../cart/index'
 import CheckoutForm from './form'
+import fetchApi from '../../modules/fetchApi'
+
+function submitOrder(values, cart) {
+  const {email, name } = values.order
+
+  fetchApi('post', 'mongodb://scott:organic1@ds163354.mlab.com:63354/organic-extractions', {
+  order: {
+    name,
+    email,
+    order_items_attributes: cart.map(item => ({
+      product_id: item.id,
+      qty: item.quantity
+    }))
+  }
+}).then(json => {
+  if(json.errors) {
+    alert('something went wrong!')
+    return
+  }
+  document.location.href= `/orders/${json.id}`
+})
+}
 
  function Checkout (props) {
    const { cart } = props 
@@ -11,7 +33,7 @@ import CheckoutForm from './form'
         <Cart />
       </div>
 
-      <CheckoutForm />
+      <CheckoutForm onSubmit={ (values) => submitOrder(values, cart)}/>
   </div>
 } 
 
