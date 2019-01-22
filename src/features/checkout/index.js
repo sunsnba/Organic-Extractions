@@ -8,13 +8,13 @@ import fetchApi from '../../modules/fetchApi'
 function submitOrder(values, cart) {
   const {email, name } = values.order
 
-  fetchApi('post', 'mongodb://scott:organic1@ds163354.mlab.com:63354/organic-extractions', {
+  fetchApi('post', 'https://student-example-api.herokuapp.com/v1/orders/json', {
   order: {
     name,
     email,
     order_items_attributes: cart.map(item => ({
       product_id: item.id,
-      qty: item.quantity
+      qty: item.quantity,
     }))
   }
 }).then(json => {
@@ -23,7 +23,7 @@ function submitOrder(values, cart) {
     return
   }
   document.location.href= `/orders/${json.id}`
-})
+  })
 }
 
  function Checkout (props) {
