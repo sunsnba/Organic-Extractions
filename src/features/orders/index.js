@@ -8,7 +8,7 @@ class Order extends React.Component {
     }
 
     componentDidMount () {
-        fetchApi('get', `https//student-example-api.herokuapp.com/v1/orders/${this.props.id}`)
+        fetchApi("get", `https//student-example-api.herokuapp.com/v1/orders/${this.props.id}`)
         .then(json => {
             this.setState({
                 order: json
