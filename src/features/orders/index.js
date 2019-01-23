@@ -17,7 +17,7 @@ class Order extends React.Component {
     }
 
     renderOrder () {
-        const {name, email, order_items } = this.state.order
+        const { name, email, order_items } = this.state.order
         
         return   <div>
             <h3>Order Info</h3>
@@ -28,7 +28,7 @@ class Order extends React.Component {
             <ul>
                 {
                 order_items && order_items.map(item => {
-                    const { product, qty, product: {name, image, price } } = item 
+                    const { product, qty, product: { name, image, price } } = item 
                     return <li>
                         <img src={image } width={32} />
                         { name }
