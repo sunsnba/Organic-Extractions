@@ -6,7 +6,8 @@ class Contact extends Component {
 
       this.state = {itemText: ''}
     }  
-  
+  // anything that affects the form should be an input tag.
+
   render() {
   return (
         <div className="contact" >
@@ -28,8 +29,20 @@ class Contact extends Component {
                       <br/>
                       <br/>
         </div>
-    );
-};
+    )
+}
+
+onInputChange(itemText) {
+  this.setState({itemText})
+  }
+
+onSubmit(event) {
+  console.log('hi')
+  event.preventDefault() 
+  // w/out this event.preventDefault the app will immediately clear the list
+  //this.props.updateList(this.state.itemText);
+  this.setState({itemText: ''});
+  }
 }
 
 export default Contact;
