@@ -51,6 +51,30 @@ body {
 
 .emailRequest {
   text-align: left;
+  padding-left: 30px;
+}
+
+.emailForm {
+align-content: left;
+width: 100px;
+height: 165px;
+padding-left: 30px;
+}
+
+#emailButton {
+width: 200px;
+height: 35px;
+background: black;
+color: white;
+padding-top: 10px;
+font-size: 14px;
+border-radius: 4px;
+}
+
+#enterEmail {
+  width: 250px;
+  height: 25px;
+  border-radius: 3px;
 }
 
 .distLogo {
