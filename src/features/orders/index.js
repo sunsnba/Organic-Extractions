@@ -8,6 +8,7 @@ class Order extends React.Component {
     }
 
     componentDidMount () {
+         console.log('this.props.order.id',  this.props.id)
         fetchApi("get", `https//student-example-api.herokuapp.com/v1/orders/${this.props.id}`)
         .then(json => {
             this.setState({
@@ -18,7 +19,6 @@ class Order extends React.Component {
 
     renderOrder () {
         const { name, email, order_items } = this.state.order
-        
         return   <div>
             <h3>Order Info</h3>
             <div>Name: { name }</div>
