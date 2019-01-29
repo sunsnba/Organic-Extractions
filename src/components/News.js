@@ -1,14 +1,19 @@
 import React from 'react';
 
-const News = () => {
+class News extends React.Component {
+    constructor(props) {
+        super(props);
+
+    this.state = {};
+}
+
+render () {
     return (
-        <div >
-        <h3>
-            News
-        </h3>
-        </div>
-    );
-};
+        <div>News</div>
+    )
+  }
+
+}
 
 export default News;
 
