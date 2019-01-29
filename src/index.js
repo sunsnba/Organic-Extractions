@@ -36,7 +36,7 @@ class App extends React.Component {
             <Route exact path={"/shop"} component={Shop}/>
             <Route exact path={"/cart"} component={CartPage}/>
             <Route exact path={'/checkout'} component={CheckoutPage}/>
-            <Route path='/orders/:id' component={OrdersPage}/>
+            <Route path='/orders/:id' component={OrdersPage} />
             <Route component={Error}/>
             </Switch>
             </div>
