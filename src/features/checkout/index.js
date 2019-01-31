@@ -21,6 +21,7 @@ function submitOrder(values, cart) {
     alert('something went wrong!')
     return
   }
+  console.log('success');
   document.location.href= `/orders/${json.id}`
   })
 }

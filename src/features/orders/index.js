@@ -8,11 +8,10 @@ class Order extends React.Component {
     }
 
     componentDidMount () {
-         console.log('this.props.order.id',  this.props.id)
         fetchApi("get", `https//student-example-api.herokuapp.com/v1/orders/${this.props.id}`)
         .then(json => {
             this.setState({
-                order: json
+                order: text
             })
         })
     }
