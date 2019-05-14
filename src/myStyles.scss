@@ -182,7 +182,13 @@ body {
   padding: 15px;
   text-align: center;
   line-height: 50px;
+  border-radius: 3px;
 }
+// added transition property to blinking news component
+.news:hover {
+  width: 400px;
+}
+
 span {
   font-size: 25px;
   font-family: cursive;
